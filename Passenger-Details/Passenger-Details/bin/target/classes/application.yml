@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Passenger Details  
+
+
+eureka:
+  instance:
+    hostname: localhost
