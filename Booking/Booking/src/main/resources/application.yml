@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: Booking  
+
+
+eureka:
+  instance:
+    hostname: localhost
