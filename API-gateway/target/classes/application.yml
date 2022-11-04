@@ -1,0 +1,35 @@
+
+eureka:
+  instance:
+    hostname: localhost
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        #- id: Authentication
+         # uri: http://localhsot:9090/
+          #predicates:
+           # - Path=/login/**
+        - id : Search
+          uri: http://localhost:8089/
+          predicates:
+            - Path=/search/**
+        - id : Booking
+          uri: http://localhost:9092/
+          predicates:
+            - Path=/booking/**
+        - id : Passenger-Details
+          uri: http://localhost:9093/
+          predicates:
+            - Path=/passenger/**
+        - id : Order_Service
+          uri: http://localhost:8084/
+          predicates:
+            - Path=/payment/**
+        - id : SpringSecutity
+          uri: http://localhost:8682/
+          predicates:
+            - Path=/**
