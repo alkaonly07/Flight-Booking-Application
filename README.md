@@ -1,2 +1,2 @@
 # Flight-Booking-Application
-This is Flight Booking Application using Spring Microservices and ReactJS
+This is a Flight Booking Application using Spring Boot, Microservices and ReactJS
